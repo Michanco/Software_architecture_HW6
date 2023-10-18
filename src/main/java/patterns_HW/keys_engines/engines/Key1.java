@@ -1,10 +1,9 @@
 package patterns_HW.keys_engines.engines;
 
-import patterns_HW.keys_engines.engines.Engine;
-import patterns_HW.keys_engines.engines.Engine1;
-
+//ключ с фиксированным типом
 public class Key1 implements IUseKey{
     private int keyType = 1;
+
 
     @Override
     public void useKey(Engine engine){

@@ -1,5 +1,6 @@
 package patterns_HW.keys_engines.engines;
 
+// ключ с возможностью изменения типа
 public class ProgrammedKey implements IUseKey{
     private int keyType;
     @Override
