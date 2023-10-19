@@ -1,4 +1,4 @@
-package patterns_HW.keys_engines.engines;
+package patterns_HW.keys_engines.keys;
 
 public class Key2 extends Key implements IGetKeyType{
     private int keyType = 2;

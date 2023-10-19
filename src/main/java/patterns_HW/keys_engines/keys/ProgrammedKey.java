@@ -1,4 +1,4 @@
-package patterns_HW.keys_engines.engines;
+package patterns_HW.keys_engines.keys;
 
 // ключ с возможностью изменения типа
 public class ProgrammedKey extends Key implements IGetKeyType{

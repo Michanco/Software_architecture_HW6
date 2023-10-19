@@ -1,4 +1,4 @@
-package patterns_HW.keys_engines.engines;
+package patterns_HW.keys_engines.keys;
 
 //ключ с фиксированным типом
 public class Key1 extends Key implements IGetKeyType{

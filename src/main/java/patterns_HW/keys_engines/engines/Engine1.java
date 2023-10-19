@@ -1,5 +1,7 @@
 package patterns_HW.keys_engines.engines;
 
+import patterns_HW.keys_engines.keys.Key;
+
 public class Engine1 implements IEngine {
     private int engineType = 1;
     private void start() {

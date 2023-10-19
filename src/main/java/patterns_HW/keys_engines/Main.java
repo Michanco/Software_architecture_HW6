@@ -1,6 +1,10 @@
 package patterns_HW.keys_engines;
 
 import patterns_HW.keys_engines.engines.*;
+import patterns_HW.keys_engines.keys.Key;
+import patterns_HW.keys_engines.keys.Key1;
+import patterns_HW.keys_engines.keys.Key2;
+import patterns_HW.keys_engines.keys.ProgrammedKey;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +20,7 @@ public class Main {
         engine1.useKey(programmedKey);
         programmedKey.setKeyType(2);
         engine2.useKey(programmedKey);
+
 
 
     }
