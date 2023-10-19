@@ -1,8 +1,8 @@
 package patterns_HW.keys_engines.engines;
 
-public abstract class Engine {
-    int engineType;
+public interface Engine {
     //доступ к методу только через подходящий ключ
-    abstract  void start();
-    abstract public void useKey(Key key);
+    private void start(){};
+    void useKey(Key key);
+    int getEngineType();
 }
