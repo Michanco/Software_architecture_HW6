@@ -1,17 +1,11 @@
 package patterns_HW.keys_engines.engines;
 
 //ключ с фиксированным типом
-public class Key1 implements IUseKey{
+public class Key1 extends Key implements IGetKeyType{
     private int keyType = 1;
 
-
     @Override
-    public void useKey(Engine engine){
-        if (this.keyType == engine.getEngineType()){
-            engine.start();
-        } else {
-            System.out.println("The key is wrong");
-        }
-
+    public int getKeyType() {
+        return this.keyType;
     }
 }

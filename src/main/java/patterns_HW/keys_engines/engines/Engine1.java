@@ -7,6 +7,17 @@ public class Engine1 extends Engine{
         System.out.println("Engine1 started");
     }
 
+    @Override
+    public void useKey(Key key) {
+        if (this.engineType == key.getKeyType()){
+            this.start();
+        } else {
+            System.out.println("The key is wrong");
+        }
+
+    }
+
+
     public int getEngineType() {
         return engineType;
     }

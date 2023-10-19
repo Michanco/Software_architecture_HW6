@@ -6,18 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Engine engine1 = new Engine1();
         Engine engine2 = new Engine2();
-        Key1 key1 = new Key1();
-        Key2 key2 = new Key2();
-        key1.useKey(engine1);
-        key2.useKey(engine2);
+        Key key1 = new Key1();
+        Key key2 = new Key2();
+        engine1.useKey(key1);
+        engine2.useKey(key2);
         ProgrammedKey programmedKey = new ProgrammedKey();
-        programmedKey.useKey(engine1);
+        engine1.useKey(programmedKey);
         programmedKey.setKeyType(1);
-        programmedKey.useKey(engine1);
-        programmedKey.useKey(engine2);
+        engine1.useKey(programmedKey);
         programmedKey.setKeyType(2);
-        programmedKey.useKey(engine2);
-
+        engine2.useKey(programmedKey);
 
 
     }

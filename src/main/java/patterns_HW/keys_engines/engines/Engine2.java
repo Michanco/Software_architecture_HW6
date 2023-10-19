@@ -8,7 +8,14 @@ public class Engine2 extends Engine{
     }
 
     @Override
-    public int getEngineType() {
-        return engineType;
+    public void useKey(Key key) {
+        if (this.engineType == key.getKeyType()){
+            this.start();
+        } else {
+            System.out.println("The key is wrong");
+        }
+
     }
+
+
 }
