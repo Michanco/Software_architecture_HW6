@@ -1,6 +1,6 @@
 package patterns_HW.keys_engines.engines;
 
-public class Engine2 implements Engine{
+public class Engine2 implements IEngine {
     private int engineType = 2;
     private void start() {
         System.out.println("Engine2 started");
